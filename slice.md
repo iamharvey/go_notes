@@ -41,3 +41,6 @@ Slice type is an abstraction on top of array type.
   ```
 - To avoid 'referencing to original slice', we can use copy
 - To expand the capacity of a slice, we can use append
+
+## Reference:
+[1. Go Slices: usage and internals.](https://blog.golang.org/go-slices-usage-and-internals)
