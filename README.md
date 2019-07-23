@@ -1,3 +1,3 @@
-# Go Learning Notes
+# Go Learning Notes (summary + code samples)
 
 - [slice](slice.md)
