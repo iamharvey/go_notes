@@ -63,7 +63,7 @@ valid to access. The memory block will be re-framed and re-initialised after the
 
 When we create The Flash (see `createTheFlash()`), we first create a hero struct `h` and return its reference (i.e. the address) to 
 the main function. In this case, `h` is 'shared' with the main function. Thus, the compiler considers 'that sharing' can potentially 
-hurt the program integrity and moves `h` to heap. If we run with gc flags `-gcflags "-m -m"`, we can see some information about variable escapes to 
+hurt the program integrity and moves `h` to heap. If we run with GC flags `-gcflags "-m -m"`, we can see some information about variable escapes to 
 heap:
 
 ```
@@ -83,13 +83,13 @@ The Flash  0xc00000c040
 Superman  0xc000046768 The Flash 0xc000046760
 ```
 
-Because `&h` escapes to heap, `h` thus will be constructed in the heap and both main function and the two hero creation 
+Because `&h` escapes to heap, `h` thus will be constructed in heap and both main function and the two hero creation 
 functions can **ONLY INDIRECTLY ACCESS** to it.
 
 **REMEMBER!** Escape analysis only happens at the compilation time, thus only GO compiler knows if a variable should be 
-constructed in stack or heap. Although keeping variables sits in stack can avoid latency introduced by GC that operates on heap. 
-We should not be obsessive about figuring out where a variable puts when we are coding. Instead, make sure our program is coded 
-correctly (in terms of the business logic) and has good readability and interpretability should always be our primary goal.
+constructed in stack or heap. Although keeping variables in stack can avoid latency introduced by GC that operates on heap,  
+we should not be obsessive about figuring out where a variable puts when we are coding. Instead, ensure our program is coded 
+correctly (from the perspective of user features) and has good readability and interpretability should always be our primary goal.
 
 
 
