@@ -63,7 +63,7 @@ valid to access. The memory block will be re-framed and re-initialised after the
 
 When we create The Flash (see `createTheFlash()`), we first create a hero struct `h` and return its reference (i.e. the address) to 
 the main function. In this case, `h` is 'shared' with the main function. Thus, the compiler considers 'that sharing' can potentially 
-hurt the program integrity and moves `h` to the heap. If we run with gc flags, we can see some information about variable escapes to 
+hurt the program integrity and moves `h` to heap. If we run with gc flags `-gcflags "-m -m"`, we can see some information about variable escapes to 
 heap:
 
 ```
