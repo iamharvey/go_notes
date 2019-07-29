@@ -190,7 +190,7 @@ $ go build -gcflags "-m -m"
 
 Examining the result, we can observe that `buf` escapes to heap due to `size`. Because size is determined at run time. 
 The compiler has no idea how big this byte slice might be thus it 'worries' that stack might not be big enough for the value, 
-thus moves buf to heap. 
+thus moves buf to heap. The codes are available [here](mem_profiling)
     
 ## Summary
 - Running benchmark test tells us how many bytes are allocated
