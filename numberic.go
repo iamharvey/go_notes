@@ -10,8 +10,8 @@ func main() {
 	println("uint64", "min:", uint64(0), "max:", ^uint64(0))
 	// for unsigned numbers, it is 0 - (2^n - 1), where n \in [8, 16, 32, 64]
 
-	println("int8", 	"min:", -(int(^uint8(0) >> 1)) - 1, "max:", int(^uint8(0) >> 1))
-	println("int16",  "min:", -(int(^uint16(0) >> 1)) - 1, "max:", int(^uint16(0) >> 1))
+	println("int8", "min:", -(int(^uint8(0) >> 1)) - 1, "max:", int(^uint8(0) >> 1))
+	println("int16", "min:", -(int(^uint16(0) >> 1)) - 1, "max:", int(^uint16(0) >> 1))
 	println("int32", "min:", -(int(^uint32(0) >> 1)) - 1, "max:", int(^uint32(0) >> 1))
 	println("int64", "min:", -(int(^uint64(0) >> 1)) - 1, "max:", int(^uint64(0) >> 1))
 	// for signed ones, the range the symmetric w.r.t zero
