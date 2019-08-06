@@ -57,6 +57,14 @@ func main() {
 	e = append(e, 'x')
 	fmt.Printf("after append, e=%v\n", e)
 
+	ss := "wwww"
+	var ss1 = &ss
+	var ss2 = &ss
+	var ss3 = &ss
+	println(&ss, ss1)
+	println(&ss, ss2)
+	println(&ss, ss3)
+
 }
 
 
