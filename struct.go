@@ -40,7 +40,7 @@ func main() {
 	// two empty struct slices does not have the same address (because they are no longer empty)
 	//  but their backing value (array) are the same
 
-	println(unsafe.Sizeof(a) == unsafe.Sizeof(b), unsafe.Sizeof(a))
+	println(unsafe.Sizeof(a) == unsafe.Sizeof(b), unsafe.Sizeof(a) == 24)
 	// true, true
 	// an empty slice has the allocation of its header size (12 in 32 bit and 24 in 64 bit machine) no matter
 	// what type of slice it is
