@@ -177,7 +177,7 @@ the context will be cancelled when there is an error encountered in the error gr
 returns an error, the program terminates the rest.
 
 
-For the full example codes, please see in [go_routine.go](go_routine.go).
+For the full example codes, please see in [go_routines.go](go_routines.go).
 
 
 
