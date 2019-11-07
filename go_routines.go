@@ -1,3 +1,5 @@
+// +build darwin
+
 package main
 
 import (
@@ -59,7 +61,7 @@ func example3() {
 
 func job(ID int) error {
 	if rand.Intn(10) == ID {
-		// fmt.Printf("===> oops! job %v failed\n", ID)
+		fmt.Printf("===> oops! job %v failed\n", ID)
 		return fmt.Errorf("job %v failed", ID)
 	}
 

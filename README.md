@@ -9,6 +9,3 @@
 - [memory profiling](mem_profiling.md)
 - [go routines](go_routines.md)
 
-## Fun
-- [How to make a fair draw](fair_draw.md)
-
