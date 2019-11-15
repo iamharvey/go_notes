@@ -129,6 +129,9 @@ be inferred.
 Recursive read locking can happen when a goroutine called `Lock`, other goroutines attempt to get a read lock. 
 In this case, Go program throws a fatal error of deadlock (no one should starve at any moment). 
 
+## Discussion
+If we have many readers and only a few writers, RWMutex is a good choice, otherwise Mutex is just fine. Some also use channel to implement. There is no standard de facto answer for solving RW problems. We need pread out all the candidates and measure their performance.
+
 
 Reference:
 - [1] [sync package godoc](https://golang.org/pkg/sync)
