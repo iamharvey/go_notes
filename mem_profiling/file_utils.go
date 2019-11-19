@@ -7,7 +7,7 @@ import (
 
 func findInFile(word string) (count int, err error) {
 
-	data, err := ioutil.ReadFile("test.txt")
+	data, err := ioutil.ReadFile("words.txt")
 	if err != nil {
 		return count, err
 	}

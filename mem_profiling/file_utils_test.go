@@ -8,7 +8,7 @@ func BenchmarkFindInFile(b *testing.B) {
 	b.ResetTimer()
 	count := 0
 	for i := 0; i < b.N; i++ {
-		count, _ = findInFile("Fermi paradox")
+		count, _ = findInFile("t[wo]o")
 	}
-	println("keyword:Fermi, count:", count)
+	println("keyword:t[wo]o, count:", count)
 }
