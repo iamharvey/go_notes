@@ -9,4 +9,4 @@
 - [memory profiling](mem_profiling.md)
 - [go routines](go_routines.md)
 - [synchronization](synchronization.md)
-
+- [defer](defer.md)
