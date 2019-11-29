@@ -389,5 +389,8 @@ case *T1, *T2:
 
 The result matches the condition of *T1, *T2, because pointer that points to a `nil` is not `nil`.
 
+The full source code can be found [here](interface.go)
+
 ## Reference:
 1. [Go interface](https://tour.golang.org/methods/9)
+2. [Interface In Go (Part II) by Michał Łowicki](https://medium.com/golangspec/interfaces-in-go-part-ii-d5057ffdb0a6)

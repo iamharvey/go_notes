@@ -10,3 +10,4 @@
 - [go routines](go_routines.md)
 - [synchronization](synchronization.md)
 - [defer](defer.md)
+- [interface](interface.md)
