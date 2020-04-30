@@ -11,3 +11,4 @@
 - [synchronization](synchronization.md)
 - [defer](defer.md)
 - [interface](interface.md)
+- [shasum](shasum.md)
