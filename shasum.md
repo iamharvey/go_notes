@@ -12,10 +12,10 @@ Well, it is not. If we run the follow codes:
 
 ```shell script
 func main() {
-	h := sha1.New()
-	h.Write([]byte(`\0hello sha1`))
-	s := h.Sum(nil)
-	fmt.Printf("%x\n", s)
+    h := sha1.New()
+    h.Write([]byte(`\0hello sha1`))
+    s := h.Sum(nil)
+    fmt.Printf("%x\n", s)
 }
 ```
 
@@ -24,7 +24,7 @@ The result we get is `b56c209e2ad8aabd6fd25ef63fa436ef29cf11e1`.
 So, how about the follow codes?
 ```shell script
 func main() {
-	h := sha1.New()
+    h := sha1.New()
     b1 := []byte("")
     b2 := []byte(`hello sha1`)
     b1 = append(b1, b2...)
