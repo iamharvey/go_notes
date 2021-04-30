@@ -12,3 +12,4 @@
 - [defer](defer.md)
 - [interface](interface.md)
 - [shasum](shasum.md)
+- [type-safe enum](enum.go)
